@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      About me
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+      <ion-card-title>Description</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+        <ion-list>
+            <ion-item *ngFor="let item of">
+              <ion-thumbnail slot="start">
+                <ion-img [src]="item.src"></ion-img>
+              </ion-thumbnail>
+              <ion-label>{{item.text}}</ion-label>
+            </ion-item>
+          </ion-list>
+
+      My name is Milinda Senaka Nandasena. I am undergraduate at the University of Moratuwa, Faculty of Information Technology, Sri Lanka. I am a software designer and developer with experience in designing, implementing, testing and timely releasing software.
+    </ion-card-content>
+  </ion-card>
+  
+  <ion-card>
+    <ion-item>
+      <ion-icon name="appstore" slot="start"></ion-icon>
+      <ion-label>My Apps</ion-label>
+      <ion-button id="connectPlaystore" fill="outline" slot="end">View</ion-button>
+    </ion-item>
+  
+    <ion-card-content>
+      Help to share my products with your friends...
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
